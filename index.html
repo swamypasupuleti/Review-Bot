@@ -7,15 +7,14 @@
 
 <p id="demo"></p>
 
+<button onclick="handleCheckout()">Buy</button>
+
+<script src="checkout.js"></script>
 <script>
-function multiply(a, b) {
-  return a * b;
+function handleCheckout() {
+    const total = checkout(100);
+    console.log(total);
 }
-
-let result = multiply(4, 3);
-
-document.getElementById("demo").innerHTML = "The result is " + result;
 </script>
-
 </body>
 </html>
